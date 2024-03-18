@@ -69,7 +69,8 @@ export class HomeComponent implements OnInit , OnDestroy{
         response && (this.weatherDatas = response)
         console.log(this.weatherDatas)
       },
-      error:(error) =>console.log(error),
+      error:(error) =>alert("Cidade não encontra , digite corretamente"),
+
     })
   }
 
