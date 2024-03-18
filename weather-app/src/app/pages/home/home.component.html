@@ -19,6 +19,8 @@
     </span>
   </form>
 
+  <app-loading *ngIf="!weatherDatas"></app-loading>
+
   <app-weather-card *ngIf="weatherDatas" [weatherDataFromHome]="weatherDatas"></app-weather-card>
 </div>
 
